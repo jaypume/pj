@@ -1,0 +1,18 @@
+[user]
+	email = i@jaypu.com
+	name = Jie Pu
+[core]
+	autocrlf = input
+	excludesFile = ~/.gitignore_global
+	safecrlf = true
+	editor = vim
+[http]
+	proxy = http://127.0.0.1:7890
+
+[alias]
+	ci = "commit -s"
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
