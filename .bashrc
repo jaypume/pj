@@ -137,4 +137,3 @@ alias open="/c/windows/explorer.exe"
 
 export ROAMING=/c/Users/pujie/AppData/Roaming
 
-/bin/zsh
