@@ -7,4 +7,6 @@
 !.tmux.conf
 !.ssh/
 !.ssh/config
+!.pip/
+!.pip/pip.conf
 
