@@ -133,7 +133,6 @@ if [ "$(umask)" = "000" ]; then
 fi
 
 alias open="/c/windows/explorer.exe"
+source ~/.pj_tools.sh
 
-
-export ROAMING=/c/Users/pujie/AppData/Roaming
 
