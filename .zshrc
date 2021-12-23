@@ -100,5 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.venv/sedna/bin/activate
-export DISPLAY=192.168.0.122:0.0
+#source ~/.venv/sedna/bin/activate
+#export DISPLAY=192.168.0.122:0.0

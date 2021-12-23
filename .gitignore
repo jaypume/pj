@@ -1,6 +1,5 @@
 *
 !.bashrc
-!.zshrc
 !.gitignore
 !.gitconfig
 !.gitignore_global
@@ -10,3 +9,4 @@
 !.pip/
 !.pip/pip.conf
 
+!.my_tools.sh
