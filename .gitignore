@@ -9,4 +9,7 @@
 !.pip/
 !.pip/pip.conf
 
-!.pj_tools.sh
+!.pj/
+!.pj/my_tools.sh
+!.pj/my_winkey.ahk
+
