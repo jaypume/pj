@@ -101,4 +101,5 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #source ~/.venv/sedna/bin/activate
-source ~/.pj_tools.sh
+source ~/.pj/my_tools.sh
+
