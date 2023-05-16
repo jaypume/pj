@@ -82,19 +82,19 @@ ToUseCtrlNavi(keyname) {
 ; OS X system shortcuts
 ; --------------------------------------------------------------
 
-LWin::
-Return
+; LWin::
+; Return
 
 ; Close windows (cmd + q to Alt + F4)
 
 
 ; Remap Windows + Tab to Alt + Tab.
-<^tab::AltTab
-; F1::Send, <#^{Left}
-; F2::Send, <#^{Right}
+; <^tab::AltTab
+; F1::Send, <!>^{Left}
+; F2::Send, <!>^{Right}
 
-F1::Send, {LCtrl up}{LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}
-F2::Send, {LCtrl up}{LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}
+; F1::Send, {LCtrl up}{LWin down}{LCtrl down}{Left}{LWin up}{LCtrl up}
+; F2::Send, {LCtrl up}{LWin down}{LCtrl down}{Right}{LWin up}{LCtrl up}
 
 ;;<#CapsLock::ShiftAltTab
 
@@ -143,45 +143,44 @@ ActivateAndOpen(t,p)
 }
 
 
-; <#^q::ActivateAndOpen("- Outlook","outlook.exe")
-; <#^q::ActivateAndOpen("- Outlook","outlook.exe")
-<#^q::MsgBox "This is q"
-<#^w::ActivateAndOpen("- Word","C:\Program Files\Microsoft Office\Office15\WINWORD.EXE")
-<#^e::ActivateAndOpen("- Excel","C:\Program Files\Microsoft Office\Office15\EXCEL.EXE")
-<#^r::ActivateAndOpen("- PowerPoint","C:\Program Files\Microsoft Office\Office15\POWERPNT.EXE")
-<#^t::ActivateAndOpen("ahk_class CASCADIA_HOSTING_WINDOW_CLASS","Windows Terminal")
-<#^y::MsgBox "This is y"
-<#^u::MsgBox "This is u"
-<#^i::MsgBox "This is i"
-<#^o::ActivateAndOpen("- OneNote","ONENOTE.exe")
-<#^p::MsgBox "This is p"
+<!>^q::ActivateAndOpen("- Outlook","outlook.exe")
+<!>^w::ActivateAndOpen("- Word","C:\Program Files\Microsoft Office\Office15\WINWORD.EXE")
+<!>^e::ActivateAndOpen("- Excel","C:\Program Files\Microsoft Office\Office15\EXCEL.EXE")
+<!>^r::ActivateAndOpen("- PowerPoint","C:\Program Files\Microsoft Office\Office15\POWERPNT.EXE")
+<!>^t::ActivateAndOpen("ahk_class CASCADIA_HOSTING_WINDOW_CLASS","Windows Terminal")
+<!>^y::MsgBox "This is y"
+<!>^u::MsgBox "This is u"
+<!>^i::MsgBox "This is i"
+<!>^o::ActivateAndOpen("- OneNote","ONENOTE.exe")
+<!>^p::MsgBox "This is p"
 
 
-; <#^a::ActivateAndOpen("— Atom","C:\Users\p00390888\AppData\Local\atom\atom.exe -a")
-; <#^a::ActivateAndOpen("NeatReader","C:\Program Files (x86)\NeatReader\NeatReader.exe")
-<#^s::ActivateAndOpen("- Visual Studio Code", "C:\Users\p00390888\AppData\Local\Programs\Microsoft VS Code\Code.exe")
-;;<#^s::ActivateAndOpen("- Microsoft Edge","microsoft-edge")
-<#^d::ActivateAndOpen("- Adobe Acrobat Reader DC","C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe")
-<#^f::ActivateAndOpen("ahk_class CabinetWClass","explorer")
-<#^g::ActivateAndOpen("- Google Chrome","C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
-<#^h::ActivateAndOpen("ahk_class SunAwtFrame","C:\Program Files\JetBrains\PyCharm 2020.3.2\bin\pycharm64.exe")
-<#^j::ActivateAndOpen("IntelliJ IDEA 2017.1","D:\APP\JetBrains\IntelliJ IDEA 2017.1\bin\idea64.exe")
-<#^k::ActivateAndOpen("- GoLand","D:\APP\JetBrains\GoLand 182.3569.26\bin\goland64.exe")
-; <#^l::ActivateAndOpen("- PyCharm","D:\APP\JetBrains\PyCharm 2018.1.4\bin\pycharm64.exe")
+; <!>^a::ActivateAndOpen("— Atom","C:\Users\p00390888\AppData\Local\atom\atom.exe -a")
+; <!>^a::ActivateAndOpen("NeatReader","C:\Program Files (x86)\NeatReader\NeatReader.exe")
+<!>^s::<#1 ;WeLink
+;;<!>^s::ActivateAndOpen("- Microsoft Edge","microsoft-edge")
+<!>^d::ActivateAndOpen("- Adobe Acrobat Reader DC","C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader\AcroRd32.exe")
+<!>^f::ActivateAndOpen("ahk_class CabinetWClass","explorer")
+<!>^g::ActivateAndOpen("- Microsof","")
+<!>^h::ActivateAndOpen("ahk_class SunAwtFrame","C:\Program Files\JetBrains\PyCharm 2020.3.2\bin\pycharm64.exe")
+<!>^j::ActivateAndOpen("IntelliJ IDEA 2017.1","D:\APP\JetBrains\IntelliJ IDEA 2017.1\bin\idea64.exe")
+<!>^k::ActivateAndOpen("- GoLand","D:\APP\JetBrains\GoLand 182.3569.26\bin\goland64.exe")
+; <!>^l::ActivateAndOpen("- PyCharm","D:\APP\JetBrains\PyCharm 2018.1.4\bin\pycharm64.exe")
+<!>^l::ActivateAndOpen("- Google Chrome","C:\Program Files (x86)\Google\Chrome\Application\chrome.exe")
 
 
-<#^z::<#1 ;WeLink
-; <#^z::ActivateAndOpen("ahk_exe NeatReader.exe","zotero.exe")
-; <#^x::ActivateAndOpen("- Mozilla Firefox","C:\Program Files\Mozilla Firefox\firefox.exe")
-<#^x::ActivateAndOpen("- Dynalist","C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe  --profile-directory=Default --app-id=jgikgglfcplknofghgafpbiomphkjiif")
-<#^c::ActivateAndOpen("Neat Reader","C:\Program Files (x86)\NeatReader\NeatReader.exe")
-; <#^c::ActivateAndOpen("Cmder","D:\Home\App\cmder\Cmder.exe")
-; <#^v::ActivateAndOpen("- Visio Professional", "C:\Program Files\Microsoft Office\Office15\VISIO.EXE")
-; <#^v::ActivateAndOpen("- Enterprise Architect", "C:\Program Files (x86)\EdrawSoft\EdrawMax\EdrawMax.exe")
-<#^v::ActivateAndOpen("ahk_class Qt5QWindowIcon", "C:\Program Files (x86)\EdrawSoft\EdrawMax\EdrawMax.exe")
-<#^b::ActivateAndOpen("- Mozilla Firefox","C:\Program Files\Mozilla Firefox\firefox.exe")
-; <#^m::ActivateAndOpen("Postman", "Postman.exe")
-<#^n::MsgBox "This is n"
+; <!>^z::ActivateAndOpen("ahk_exe NeatReader.exe","zotero.exe")
+; <!>^x::ActivateAndOpen("- Mozilla Firefox","C:\Program Files\Mozilla Firefox\firefox.exe")
+<!>^x::ActivateAndOpen("- Dynalist","C:\Program Files (x86)\Google\Chrome\Application\chrome_proxy.exe  --profile-directory=Default --app-id=jgikgglfcplknofghgafpbiomphkjiif")
+; <!>^c::ActivateAndOpen("Neat Reader","C:\Program Files (x86)\NeatReader\NeatReader.exe")
+<!>^c::ActivateAndOpen("- Visual Studio Code", "C:\Users\p00390888\AppData\Local\Programs\Microsoft VS Code\Code.exe")
+; <!>^c::ActivateAndOpen("Cmder","D:\Home\App\cmder\Cmder.exe")
+; <!>^v::ActivateAndOpen("- Visio Professional", "C:\Program Files\Microsoft Office\Office15\VISIO.EXE")
+; <!>^v::ActivateAndOpen("- Enterprise Architect", "C:\Program Files (x86)\EdrawSoft\EdrawMax\EdrawMax.exe")
+<!>^v::ActivateAndOpen("ahk_class Qt5QWindowIcon", "C:\Program Files (x86)\EdrawSoft\EdrawMax\EdrawMax.exe")
+<!>^b::ActivateAndOpen("- Mozilla Firefox","C:\Program Files\Mozilla Firefox\firefox.exe")
+; <!>^m::ActivateAndOpen("Postman", "Postman.exe")
+<!>^n::MsgBox "This is n"
 
 
 
@@ -190,23 +189,23 @@ ActivateAndOpen(t,p)
 ;                      方向键                                        ;|
 ;---------------------------------o-----------------------------------o
 
-<#b::MySendNavigator("Left")
-<#f::MySendNavigator("Right")
-<#n::MySendNavigator("Down")
-<#p::MySendNavigator("Up")
-<#a::MySendNavigator("Home")
-<#e::MySendNavigator("End")
-<#k::MyDeleteLine()
-<#[::Send, ^+{Tab}
-<#]::Send, ^{Tab}
+>^h::MySendNavigator("Left")
+>^l::MySendNavigator("Right")
+>^j::MySendNavigator("Down")
+>^k::MySendNavigator("Up")
+>^;::MySendNavigator("Home")
+>^'::MySendNavigator("End")
+>^g::MyDeleteLine()
+>^[::Send, ^+{Tab}
+>^]::Send, ^{Tab}
 
 
-+<#h::MySendNavigatorShift("Left")
-+<#l::MySendNavigatorShift("Right")
-+<#j::MySendNavigatorShift("Down")
-+<#k::MySendNavigatorShift("Up")
-+<#i::MySendNavigatorShift("Home")
-+<#o::MySendNavigatorShift("End")
+; +<#h::MySendNavigatorShift("Left")
+; +<#l::MySendNavigatorShift("Right")
+; +<#j::MySendNavigatorShift("Down")
+; +<#k::MySendNavigatorShift("Up")
+; +<#i::MySendNavigatorShift("Home")
+; +<#o::MySendNavigatorShift("End")
 
 
 ;; <#h::MySendNavigator("Left")
@@ -233,11 +232,11 @@ ActivateAndOpen(t,p)
 ;=====================================================================o
 ;                      兼容zxcv                                        ;|
 ;---------------------------------o-----------------------------------o
-<#z::^z
-<#x::^x
-<#c::^c
-<#v::^v
-<#r::^r
+; <#z::^z
+; <#x::^x
+; <#c::^c
+; <#v::^v
+; <#r::^r
 ; $F1::Send ^#{Left}
 ; $F2::Send ^#{Right}
 ; $F3::Send #{Tab}
@@ -251,7 +250,7 @@ MyReturn(){
 ;                     Navigator Function
 ;-----------------------------------o---------------------------------o
 MySendNavigator(keyname){
-  if GetKeyState("ctrl") = 0
+  if GetKeyState("win") = 0
   {
     if GetKeyState("alt") = 0
       if ToUseCtrlNavi(keyname)
@@ -264,16 +263,16 @@ MySendNavigator(keyname){
   }
   else {
     if GetKeyState("alt") = 0
-      Send, ^{%keyname%}
+      Send, {%keyname%}
     else
-      Send, ^!{%keyname%}
+      Send, !{%keyname%}
     return
   }
   return
 }
 
 MySendNavigatorShift(keyname){
-  if GetKeyState("ctrl") = 0
+  if GetKeyState("win") = 0
   {
     if GetKeyState("alt") = 0
       Send, +{%keyname%}
@@ -283,9 +282,9 @@ MySendNavigatorShift(keyname){
   }
   else {
     if GetKeyState("alt") = 0
-      Send, +^{%keyname%}
+      Send, ^{%keyname%}
     else
-      Send, +^!{%keyname%}
+      Send, ^!{%keyname%}
     return
   }
   return
