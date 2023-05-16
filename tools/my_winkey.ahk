@@ -189,13 +189,13 @@ ActivateAndOpen(t,p)
 ;                      方向键                                        ;|
 ;---------------------------------o-----------------------------------o
 
->^h::MySendNavigator("Left")
->^l::MySendNavigator("Right")
->^j::MySendNavigator("Down")
->^k::MySendNavigator("Up")
->^;::MySendNavigator("Home")
->^'::MySendNavigator("End")
->^g::MyDeleteLine()
+>^b::MySendNavigator("Left")
+>^f::MySendNavigator("Right")
+>^n::MySendNavigator("Down")
+>^p::MySendNavigator("Up")
+>^a::MySendNavigator("Home")
+>^e::MySendNavigator("End")
+>^k::MyDeleteLine()
 >^[::Send, ^+{Tab}
 >^]::Send, ^{Tab}
 
