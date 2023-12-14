@@ -1,3 +1,9 @@
 .idea/*
-hack/*.sh
 *pujie*
+.pj/*
+.pj.python/*
+Makefile
+build_image.sh
+*.pj
+*__pychache__*
+**.pyc

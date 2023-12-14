@@ -101,5 +101,34 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #source ~/.venv/sedna/bin/activate
-source ~/.pj/my_tools.sh
+
+source /d/Scoop/.init/my_tools.sh 
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=~/go
+export PATH="$GOPATH/bin":$PATH
+
+
+# export GO111MODULE=on
+#export GOFLAGS=-mod=vendor
+go env -w GOPROXY=https://goproxy.cn,direct
+#  export LC_ALL=C
+export LC_ALL=en_US.UTF-8
+
+
+source ~/code/infinite-space/generative_agents/.pj/scripts/main.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/d/home/pj/miniconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/d/home/pj/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/d/home/pj/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/d/home/pj/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
 

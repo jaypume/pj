@@ -5,14 +5,34 @@
 	autocrlf = input
 	excludesFile = ~/.gitignore_global
 	safecrlf = true
-	editor = vim
+#	editor = "code --wait"
+	editor = "vim"
+	pager = cat
+	filemode = false
 [http]
-	proxy = http://127.0.0.1:7890
+ 	proxy = http://127.0.0.1:7890
 
 [alias]
 	ci = "commit -s"
+	ignore = update-index --assume-unchanged
+	unignore = update-index --no-assume-unchanged
+	ignored = !git ls-files -v | grep "^[[:lower:]]"
+
+
 [filter "lfs"]
 	required = true
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
+[oh-my-zsh]
+	hide-info = 1
+[init]
+	defaultBranch = main
+[credential "helperselector"]
+	selected = manager-core
+
+[alias]
+ignore = update-index --assume-unchanged
+unignore = update-index --no-assume-unchanged
+ignored = !git ls-files -v | grep "^[[:lower:]]"
+
