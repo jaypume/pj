@@ -1,0 +1,11 @@
+*
+!.bashrc
+!.gitignore
+!.gitconfig
+!.gitignore_global
+!.tmux.conf
+!.ssh/
+!.ssh/config
+!.pip/
+!.pip/pip.conf
+
