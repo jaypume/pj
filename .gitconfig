@@ -10,7 +10,7 @@
 	pager = cat
 	filemode = false
 [http]
- 	proxy = http://127.0.0.1:7890
+# 	proxy = http://127.0.0.1:7890
 
 [alias]
 	ci = "commit -s"
